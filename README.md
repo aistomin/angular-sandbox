@@ -1,3 +1,3 @@
 # angular-sandbox
 
-Tutorial: http://www.w3schools.com/angular/
+Tutorial: http://www.w3schools.com/angular/default.asp
