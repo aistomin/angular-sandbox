@@ -1,18 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-<script>
-
-    var app = angular.module("myApp", []);
-
-    app.controller("myCtrl", function ($scope) {
-        $scope.name = "Andrej";
-        $scope.surname = "Istomin";
-    });
-
-</script>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/ctrl.js"></script>
+</head>
 <body>
-
 <div ng-app="myApp" ng-controller="myCtrl">
     {{ name + " " + surname }}
 </div>
