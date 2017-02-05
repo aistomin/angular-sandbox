@@ -3,10 +3,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <body>
 
-<div ng-app="">
+<div ng-app="" ng-init="company={name: 'RisingSoft'}">
     <p>First Name : <input type="text" ng-model="name"></p>
     <p>Last Name : <input type="text" ng-model="surname"></p>
-    <h1>Hello {{name + " " + surname + "!"}}</h1>
+    <h1>Employee: {{name + " " + surname}}</h1>
+    <h1>Company: {{company.name}}</h1>
 </div>
 
 </body>
