@@ -12,7 +12,8 @@
     app.controller('myCtrl', function($scope) {
         $scope.firstname = "John";
         $scope.changeName = function() {
-            $scope.firstname = "Nelly";
+            var names = ['Nelly', 'Fritz', 'Dieter', 'Thomas'];
+            $scope.firstname = names[Math.floor(Math.random() * names.length)];
         }
     });
 </script>
