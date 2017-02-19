@@ -1,10 +1,12 @@
-<div ng-app="myApp" ng-controller="personCtrl">
+<script src="js/namesController.js"></script>
 
-    First Name: <input type="text" ng-model="firstName"><br>
-    Last Name: <input type="text" ng-model="lastName"><br>
-    <br>
-    Full Name: {{fullName()}}
+<div ng-app="myApp" ng-controller="namesCtrl">
+
+    <ul>
+        <li ng-repeat="x in names">
+            {{ x.name + ', ' + x.country }}
+        </li>
+    </ul>
 
 </div>
 
-<script src="js/personController.js"></script>
