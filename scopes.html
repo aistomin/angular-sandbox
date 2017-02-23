@@ -5,21 +5,19 @@
     <script src="js/ctrl-example-app.js"></script>
     <script src="js/ctrl-example.js"></script>
 </head>
-<body>
 <div ng-app="myApp" ng-controller="myCtrl">
 
-    <input ng-model="name">
-
-    <h1>My name is {{name}}</h1>
+    <ul>
+        <li ng-repeat="x in names">{{x}}</li>
+    </ul>
 
 </div>
 
 <script>
     var app = angular.module('myApp', []);
 
-    app.controller('myCtrl', function($scope) {
-        $scope.name = "John Doe";
+    app.controller('myCtrl', function ($scope) {
+        $scope.names = ["Emil", "Tobias", "Linus"];
     });
 </script>
-</body>
 </html>
